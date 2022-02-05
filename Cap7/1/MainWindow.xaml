@@ -1,0 +1,100 @@
+﻿<Window
+                x:Class="Ejercicio1.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:local="clr-namespace:Ejercicio1"
+                mc:Ignorable="d"
+                Title="School"
+                Width="480"
+                MinWidth="480">
+        <Grid Margin="20, 30">
+                <StackPanel>
+                        <Grid>
+                                <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- <StackPanel
+                                                Grid.Row="0"
+                                                Grid.Column="0">
+                                        <Label>Cantidad de salones:</Label>
+                                        <TextBox x:Name="CantSalones" />
+                                        <Button x:Name="AddCantSalones">Agregar</Button>
+                                </StackPanel> -->
+                                <StackPanel Grid.Column="0">
+                                        <StackPanel Orientation="Horizontal">
+                                                <Label HorizontalAlignment="Left">Salones</Label>
+                                                <Button
+                                                                x:Name="AddSalonBtn"
+                                                                Click="OnAddSalonClick"
+                                                                FontSize="10"
+                                                                Padding="6,3"
+                                                                HorizontalAlignment="Right">Agregar</Button>
+                                        </StackPanel>
+                                        <ListBox
+                                                        x:Name="SalonesListBox"
+                                                        Margin="0,20"
+                                                        SelectionChanged="OnSalonesListBoxSelectionChanged"
+                                                        MinHeight="200"
+                                                        Height="300"
+                                                        MaxHeight="600" />
+                                </StackPanel>
+                                <StackPanel
+                                                Margin="20,0,0,0"
+                                                Grid.Column="1">
+                                        <StackPanel
+                                                        Orientation="Horizontal"
+                                                        Width="Auto">
+                                                <Label HorizontalAlignment="Left">Calificaciones</Label>
+                                                <TextBox
+                                                                x:Name="NewCalifTextBox"
+                                                                Width="60"
+                                                                TextChanged="OnNewCalifTextBoxChanged"
+                                                                IsEnabled="False" />
+                                                <Button
+                                                                x:Name="AddCalificacionBtn"
+                                                                Click="OnAddCalificacionClick"
+                                                                Padding="6,3"
+                                                                HorizontalAlignment="Right"
+                                                                FontSize="10"
+                                                                IsEnabled="False">Agregar</Button>
+                                        </StackPanel>
+                                        <ListBox
+                                                        x:Name="CalifListBox"
+                                                        Margin="0,20"
+                                                        MinHeight="200"
+                                                        Height="300"
+                                                        MaxHeight="600" />
+                                </StackPanel>
+                        </Grid>
+                        <Grid>
+                                <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                        <TextBlock>Promedio</TextBlock>
+                                        <TextBlock
+                                                        x:Name="PromedioTextBlock"
+                                                        FontSize="18" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                        <TextBlock>Menor calificacion</TextBlock>
+                                        <TextBlock
+                                                        x:Name="MenorTextBlock"
+                                                        FontSize="18" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="2">
+                                        <TextBlock>Mayor calificacion</TextBlock>
+                                        <TextBlock
+                                                        x:Name="MayorTextBlock"
+                                                        FontSize="18" />
+                                </StackPanel>
+                        </Grid>
+                </StackPanel>
+        </Grid>
+</Window>

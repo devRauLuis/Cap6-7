@@ -1,0 +1,45 @@
+﻿<Window
+        x:Class="_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2"
+        mc:Ignorable="d"
+        Title="Diccionario"
+        Height="450"
+        Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Menu>
+                    <MenuItem Header="Nueva">
+                        <MenuItem
+                                Header="Definicion"
+                                Click="OnNuevaDefinicionClick" />
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+            <StackPanel
+                    Orientation="Horizontal"
+                    Margin="0,10,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <ListBox
+                            x:Name="WordsListBox"
+                            MinHeight="200"
+                            Height="400"
+                            SelectionChanged="OnWordsListBoxSelectionChanged" />
+                    <StackPanel Margin="15,0,0,0">
+                        <TextBlock
+                                x:Name="SelectedWordTextBlock"
+                                FontSize="18" />
+                        <TextBlock
+                                x:Name="SelectedDefinitionTextBlock"
+                                TextWrapping="Wrap" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

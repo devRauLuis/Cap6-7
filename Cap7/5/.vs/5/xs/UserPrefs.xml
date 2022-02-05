@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{E2A11582-CFE6-4D81-904B-3C7511C691DC}|Default">
+  <MonoDevelop.Ide.ItemProperties.5 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+    <Files>
+      <File FileName="UI/Registros/NewContact.xaml.cs" Line="14" Column="33" />
+      <File FileName="AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="62" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="5" expanded="True">
+            <Node name="5" expanded="True">
+              <Node name="UI" expanded="True">
+                <Node name="Registros" expanded="True" />
+              </Node>
+              <Node name="App.xaml.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
